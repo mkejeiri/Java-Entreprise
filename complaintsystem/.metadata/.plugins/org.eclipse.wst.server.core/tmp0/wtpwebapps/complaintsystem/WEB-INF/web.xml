@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>complaintsystem</display-name>
+  <!--it tells the App to create a SpringMVCServlet which is a controller dispatcher;
+  allow us to find the controller to handle a request which in turn render the 
+  proper requested page... 
+  SpringMVCServlet inherits (implements) from a servlet specifically designed to handle URL'S!!!
+  when SpringMVCServlet is created it will look in [Deployed Resources]/WEB-INF/SpringMVCServlet-servlet.xml
+  
+  remember that MAVEN dependencies aren't pushed by default into TOMCAT dependencies (project Web deployment dependencies).
+  --> 
+  <servlet>
+	  <servlet-name>SpringMVCServlet</servlet-name>
+	  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	  <!-- load-on-startup = true-->
+	  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  
+    <!-- specify what URL is handled by SpringMVCServlet,here only those ending with .jsp-->
+  <servlet-mapping>
+  	<servlet-name>SpringMVCServlet</servlet-name>
+  	<url-pattern>/</url-pattern>  
+  	<!-- <url-pattern>*.jsp</url-pattern> -->  
+  </servlet-mapping>  
+</web-app>

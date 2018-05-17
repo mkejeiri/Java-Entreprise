@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	body{
+	background-color: #9e9e9e;
+	/*color: #ffffff;*/
+	font-size: 20px;
+	}
+</style>
+<title>Select Candidate</title>
+</head>
+<body>
+	<div>Welcome <span th:text="${citizen.getName()}"></span>, please select a candidate:
+	</div>
+	<div th:each="candidate : ${candidates}">			
+		<a th:href="@{/voteFor(id=${candidate.id})}"  th:text="${candidate.name}"></a>
+	</div>	
+</body>
+</html>

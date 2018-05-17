@@ -1,0 +1,5 @@
+package com.kejeiri.springproject.complaintsystem;
+
+public class PersistanceConfig {
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.EnableTransactionManagement"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySources"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="javax.activation.DataSource"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp2.BasicDataSource"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp.BasicDataSource"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.LocalSessionFactoryBean"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
+    <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="com.kejeiri.springproject.complaintsystem.dao.ComplaintDao"/>
+    <fullyQualifiedTypeName name="com.kejeiri.springproject.complaintsystem.entities.Complaint"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+</qualifiedTypeNameHistroy>

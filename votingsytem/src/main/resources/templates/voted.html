@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+			background-color: #9e9e9e;
+			/*color: #ffffff;*/
+			font-size: 20px;
+		}
+	</style>
+<title>Thank you</title>
+</head>
+<body>
+<div>
+	Thank you, you voted for: 
+	<span th:text=${VotedCandidate.getName()}></span>
+</div>			
+</body>
+</html>

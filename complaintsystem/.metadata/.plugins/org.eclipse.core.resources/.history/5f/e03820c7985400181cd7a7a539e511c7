@@ -1,0 +1,35 @@
+package com.kejeiri.springproject.complaintsystem;
+
+import static org.junit.Assert.assertNotNull;
+
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@Configuration
+@EnableTransactionManagement
+@PropertySource({"classpath:database-properties.properties"})
+@ComponentScan({"om.kejeiri.springproject.complaintsystem"})
+public class PersistenceConfig {
+	
+	@Autowired
+	private Environment env;
+	Properties hibernateConfig() {
+		Properties myConfig= new Properties();
+		myConfig.setProperty("hibernate.hdm2ddl.auto", env.getProperty("hibernate.hdm2ddl.auto"));
+		myConfig.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
+		myConfig.setProperty("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+		myConfig.setProperty("jdbc.url", env.getProperty("jdbc.url"));
+		myConfig.setProperty("jdbc.username", env.getProperty("jdbc.username"));
+		myConfig.setProperty("jdbc.password", env.getProperty("jdbc.password"));
+		myConfig.setProperty("jdbc.driveClassName", env.getProperty("jdbc.driveClassName"));	
+		return myConfig;		
+	}
+	
+
+}

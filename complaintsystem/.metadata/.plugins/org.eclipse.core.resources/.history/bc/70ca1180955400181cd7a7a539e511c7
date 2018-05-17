@@ -1,0 +1,13 @@
+jdbc.driveClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/ComplaintSystem?useSSL=false
+jdbc.username=root
+jdbc.password=root
+ ##this drop at the end and re-create at the beginning!
+ #spring.jpa.hibernate.ddl-auto=create-drop
+ ##this re-create at the beginning!
+ #spring.jpa.hibernate.ddl-auto=create
+ ##at startup: it's add column/constraint but never remove unused!
+ ##spring.jpa.hibernate.ddl-auto=update
+ 
+ #Migration should be managed by DBA
+ #spring.jpa.hibernate.ddl-auto=none

@@ -1,0 +1,5 @@
+package com.kejeiri.springproject.complaintsystem.entities;
+
+public class Complaint {
+
+}

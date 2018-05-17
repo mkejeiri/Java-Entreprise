@@ -1,0 +1,25 @@
+package com.kejeiri.springproject.complaintsystem;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/*  * * * * * * * * * * * I M P O R T A N T * * * * * * * * * * * * * 
+	1- URL request sent to the server and passed to the dispatcher.
+	2- Dispacher SpringMVCServlet (see Deployed Resources/WEB-INF/web.xml) will look for a 
+		controller with the matching the request. 
+	3- once the request is matched, Dispacher will execute that controller and get the result 
+	4- the result handled and compiled with InternalResourceViewResolver. 
+	   (see config file : Deployed Resources/WEB-INF/SpringMVCServlet-servlet.xml) 
+	5- which then output the jsp file which get compiled into a servlet 
+	6- which then get compiled into an html and sent back to the browser.    
+ */
+
+@Controller
+public class App 
+{
+	@RequestMapping("/helloWorld")
+	public String HelloWorld() {	
+		//System.out.println("hello world");
+		return "HelloWorld";
+	}
+
+}

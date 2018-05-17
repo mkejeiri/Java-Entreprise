@@ -1,0 +1,6 @@
+1525980359604	Rename resource 'HelloWorld.jsp'
+1525982404640	Rename resource 'complainForm.jsp'
+1525982432156	Move 'fileComplain.jsp' to 'views'
+1525986627321	Rename type 'PersistanceConfig'
+1525987229587	Rename local variable 'toReturn'
+1525987314317	Rename local variable 'myProperties'
